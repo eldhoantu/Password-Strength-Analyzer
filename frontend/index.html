@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <div class="card">
+
+            <!-- Header -->
+            <div class="top">
+
+                <div>
+
+                    <h1>
+                        <i class="fa-solid fa-shield-halved"></i>
+                        Password Strength Analyzer
+                    </h1>
+
+                    <p>
+                        Check the security of your password instantly and generate
+                        stronger passwords for better online protection.
+                    </p>
+
+                </div>
+
+                <div class="shield">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                </div>
+
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Password Section -->
+
+            <div class="section">
+
+                <label>
+
+                    <i class="fa-solid fa-key"></i>
+
+                    Password
+
+                </label>
+
+                <div class="password-box">
+
+                    <input
+                        type="password"
+                        id="passwordInput"
+                        placeholder="Enter your password">
+
+                    <button
+                        id="togglePassword"
+                        type="button">
+
+                        <i class="fa-solid fa-eye"></i>
+
+                    </button>
+
+                </div>
+
+                <button
+                    id="analyzeBtn"
+                    class="analyze-btn">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    Analyze Password
+
+                </button>
+
+            </div>
+
+            <!-- Strength Card -->
+
+            <div class="strength-card">
+
+                <div class="strength-top">
+
+                    <span>
+
+                        <i class="fa-solid fa-chart-simple"></i>
+
+                        Password Strength
+
+                    </span>
+
+                    <span id="strengthText">
+
+                        -
+
+                    </span>
+
+                </div>
+
+                <div class="meter">
+
+                    <div id="strengthBar"></div>
+
+                </div>
+
+            </div>
+
+            <!-- Suggestions -->
+
+            <div class="suggestion-card">
+
+                <h3>
+
+                    <i class="fa-solid fa-lightbulb"></i>
+
+                    Suggestions
+
+                </h3>
+
+                <ul id="suggestions">
+
+                </ul>
+
+            </div>
+
+            <!-- Generator -->
+
+            <div class="generator-card">
+
+                <div class="generator-top">
+
+                    <h3>
+
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                        Password Generator
+
+                    </h3>
+
+                    <button id="generateBtn">
+
+                        Generate
+
+                    </button>
+
+                </div>
+
+                <div class="generated-box">
+
+                    <span id="generatedPassword">
+
+                        Click "Generate" to create a secure password
+
+                    </span>
+
+                    <button
+                        id="copyBtn"
+                        title="Copy Password">
+
+                        <i class="fa-regular fa-copy"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
